@@ -3,19 +3,37 @@ import {
     Container,
     Row,
     Col,
-    Table 
+    Table,
+    Tooltip 
   } from 'reactstrap';
 
   
+  
+  export class InvoiceRevision extends Component {
+    constructor(props) {
+      super(props);      
+      this.state = {
+        tooltipOpen: false
+      };
+    }
 
-
-export class InvoiceRevision extends Component {
-
-render(){
-    return(
+    toggle = ()=>{
+      this.setState({
+        tooltipOpen: !this.state.tooltipOpen
+      });
+    }  
+    
+    render(){
+      return(
         <Container className="invoice">
         <Row>
-          <Col><h3>Invoice <span className="invoice-number">S03834754</span></h3> </Col>
+          <Col><h3>Invoice 
+            <span id="ivn" className="invoice-number"> S03834754</span>
+            <Tooltip placement="top" isOpen={this.state.tooltipOpen} target="ivn" toggle={this.toggle}>
+          <b>Invoice Number</b>
+        </Tooltip>
+            </h3> 
+            </Col>
         </Row>
         <Container className="general-container panel-table-container">
         <Row>
