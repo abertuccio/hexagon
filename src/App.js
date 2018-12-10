@@ -3,6 +3,7 @@ import {InvoiceRevision} from './InvoiceRevision'
 import {Location} from './Location'
 import {Overview} from './Overview'
 import {
+  Container,
   Collapse,
   Navbar,
   NavbarToggler,
@@ -34,7 +35,7 @@ class NavBar extends Component {
   }
   render() {
     return (
-      <div>
+      <Container>
         <Navbar light expand="md" id="dashboardNav">
           <NavbarBrand>
           <img  src={mainLogo} alt="Main Logo"/>
@@ -78,7 +79,7 @@ class NavBar extends Component {
                 <NavLink>
                   <div className="icon-wrapper">
                     <FaBell className="bell" />  
-                    <span class="badge">2</span>
+                    <span className="badge">2</span>
                   </div>
                 </NavLink>
               </NavItem>
@@ -104,7 +105,7 @@ class NavBar extends Component {
 
           </Collapse>
         </Navbar>
-      </div>
+      </Container>
     );
   }
 }

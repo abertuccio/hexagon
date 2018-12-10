@@ -28,7 +28,7 @@ export class Location extends Component {
             return a;
         },[])}</div>;
 
-            const map = <div class="mapouter">
+            const map = <div className="mapouter">
             <iframe title="Map" width="100%" height="396" id="gmap_canvas" src="https://maps.google.com/maps?q=buenos%20aires&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
         </div>;
 
