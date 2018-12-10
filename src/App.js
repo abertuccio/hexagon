@@ -35,6 +35,7 @@ class NavBar extends Component {
   }
   render() {
     return (
+      <div className="container-backround">
       <Container>
         <Navbar light expand="md" id="dashboardNav">
           <NavbarBrand>
@@ -45,7 +46,7 @@ class NavBar extends Component {
           <Collapse isOpen={this.state.isOpen} navbar>
             <Nav navbar id="left-nav">              
               <NavItem>
-                <NavLink>Network</NavLink>
+                <NavLink>Network</NavLink>1
               </NavItem>
               <NavItem>
                 <NavLink>Network</NavLink>
@@ -106,6 +107,7 @@ class NavBar extends Component {
           </Collapse>
         </Navbar>
       </Container>
+      </div>
     );
   }
 }

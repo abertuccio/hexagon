@@ -15,6 +15,11 @@ code {
 }
 
 /* GENERAL */
+.container-backround{
+  background-color: #FFF;
+}
+
+
 .hex-invoice-table{
   font-size: 12px;
 }
