@@ -46,7 +46,7 @@ class NavBar extends Component {
           <Collapse isOpen={this.state.isOpen} navbar>
             <Nav navbar id="left-nav">              
               <NavItem>
-                <NavLink>Network</NavLink>1
+                <NavLink>Network</NavLink>
               </NavItem>
               <NavItem>
                 <NavLink>Network</NavLink>
